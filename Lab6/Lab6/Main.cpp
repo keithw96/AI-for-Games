@@ -1,7 +1,8 @@
 #include <SFML/Graphics.hpp>
+#include "Game.h" 
 
 int main()
 {
-	return 0;
-
+	Game game;
+	game.Run();
 }
