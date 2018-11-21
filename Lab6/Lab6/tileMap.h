@@ -1,5 +1,6 @@
 #pragma once
-
+#include <vector>
+#include "Tile.h"
 class TileMap
 {
 public:
@@ -8,8 +9,9 @@ public:
 
 	void initialise();
 
-	void render();
-
+	void render(sf::RenderWindow & window);
+	void setSpecialTiles();
+	void setTileHeuristics();
 private:
-
+	std::vector<Tile> m_tileArray;
 };
